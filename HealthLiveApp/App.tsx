@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, ScrollView, StatusBar, StyleSheet, View, Text} from 'react-native';
 import MonitoringDashboard from './src/modules/monitoring/components/MonitoringDashboard';
-import ReminderList from './src/modules/reminders/components/ReminderList';
+import ReminderCenter from './src/modules/reminders/components/ReminderCenter';
 import ProfileSummary from './src/modules/profile/components/ProfileSummary';
 
 function Section({title, children}: {title: string; children: React.ReactNode}) {
@@ -26,7 +26,7 @@ function App(): React.JSX.Element {
           <MonitoringDashboard />
         </Section>
         <Section title="Recordatorios personalizados">
-          <ReminderList />
+          <ReminderCenter />
         </Section>
         <Section title="Perfil de usuario">
           <ProfileSummary />
