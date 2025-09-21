@@ -3,6 +3,7 @@ import {SafeAreaView, ScrollView, StatusBar, StyleSheet, View, Text} from 'react
 import MonitoringDashboard from './src/modules/monitoring/components/MonitoringDashboard';
 import ReminderCenter from './src/modules/reminders/components/ReminderCenter';
 import ProfileSummary from './src/modules/profile/components/ProfileSummary';
+import WeeklyPlanner from './src/modules/planner/components/WeeklyPlanner';
 
 function Section({title, children}: {title: string; children: React.ReactNode}) {
   return (
@@ -27,6 +28,9 @@ function App(): React.JSX.Element {
         </Section>
         <Section title="Recordatorios personalizados">
           <ReminderCenter />
+        </Section>
+        <Section title="Plan semanal personalizado">
+          <WeeklyPlanner />
         </Section>
         <Section title="Perfil de usuario">
           <ProfileSummary />
